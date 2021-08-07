@@ -1,0 +1,53 @@
+body{
+    padding: 0 30px;
+}
+
+.header{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1255px;
+        margin: 0 auto;
+    }
+    &__params{
+        display: flex;
+        justify-content: space-between;
+        svg{
+            margin-left: 4px;
+        }
+    }
+    &__current{
+        &-lang, &-currency{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+    &__cart{
+        display: flex;
+        align-items: center;
+        & p:nth-child(2){
+            margin: 0 1em;
+        }
+    }
+    &__lang{
+        margin-right: 1em;
+    }
+}
+.header__params-item p::selection {
+    background: rgba(0, 0, 0, 0);
+}
+
+.enable {
+    position: absolute;
+    color: black;
+    background: #555;
+    transition: 0.5s;
+}
+
+.disable {
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}

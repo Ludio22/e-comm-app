@@ -1,19 +1,72 @@
-.enable {
-    display: block;
+body {
+  padding: 0 30px;
 }
 
-.header__params-item p, svg {
-    cursor: pointer;
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1255px;
+  margin: 0 auto;
+}
+.header__params {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__params svg {
+  margin-left: 4px;
+}
+.header__current-lang, .header__current-currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.header__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__cart p:nth-child(2) {
+  margin: 0 1em;
+}
+.header__lang {
+  margin-right: 1em;
+}
+
+.header__params-item p::-moz-selection {
+  background: rgba(0, 0, 0, 0);
 }
 
 .header__params-item p::selection {
-    background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
-wtf::selection {
-    background: rgba(0, 0, 0, 0);
+.enable {
+  position: absolute;
+  color: black;
+  background: #555;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .disable {
-    display: none;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
