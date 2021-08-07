@@ -1,10 +1,13 @@
+import { BrowserRouter } from "react-router-dom";
 import HeaderContainer from "./components/header/header__container";
 
 function App() {
   return (
-    <div className="App">
-      <HeaderContainer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <HeaderContainer />
+      </div>
+    </BrowserRouter>
   );
 }
 
