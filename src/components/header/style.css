@@ -1,0 +1,19 @@
+.enable {
+    display: block;
+}
+
+.header__params-item p, svg {
+    cursor: pointer;
+}
+
+.header__params-item p::selection {
+    background: rgba(0, 0, 0, 0);
+}
+
+wtf::selection {
+    background: rgba(0, 0, 0, 0);
+}
+
+.disable {
+    display: none;
+}
